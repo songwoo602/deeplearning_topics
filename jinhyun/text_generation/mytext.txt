@@ -1,0 +1,138 @@
+Abstract?Full angle spatial compounding is of interest for
+imaging small organs (breast, testicles) and small animals. Besides
+phase aberration and out of plane refraction the variations in
+speed of sound, usually assumed to be constant, also cause registration
+error. This error may be negligible regarding the visual
+appraisal of B-mode images; its effect on spatial compounding
+of the individual scans may, however, be detrimental to the
+spatial and contrast resolution depending on the geometry and
+the variations of the acoustic speed. This effect was studied on
+the basis of analytical modeling as well as measured data. An
+exact compensation of the refraction artifacts is achieved via ray
+tracing for known speed of sound distribution. An alternative
+approach is to carry out axial correction disregarding the bending
+due to refraction. The purpose of this paper is to study the
+characteristics of the axial correction and the extent to which
+the correction is sufficiently accurate. The effect of the speed
+of sound variation in spatial compounding was studied with the
+help of the point spread function (PSF). A geometrical acoustic
+model was derived with eikonal approximation to calculate the
+compounding PSF with axial correction as a function of the speed
+of sound variations and the location of the point scatterer. The
+effect of the speed of sound variation and the scatterer location on
+the spatial compounding PSF with axial correction was studied
+and the results were compared to those without correction. Axial
+correction was also applied to data measured on a high precision
+setup on phantoms corresponding to the modeled objects, in
+order to validate the efficacy of the simulation techniques. The
+results were found to conform to those predicted by the model.
+The object was chosen to be of cylindrical shape having a constant
+velocity either above or below the velocity of the surrounding
+medium and containing only one scatterer. The PSF of the
+compounding was shown to be generally of elliptical shape whose
+extent along the radial direction remains constant for a given
+speed of sound distribution and whose azimuthal extent decreases
+with increasing radial distance from the center of the cylinder.
+For a speed of sound 1550 m/s inside the cylinder of radius 3 cm
+immersed in water at 22oC, the axial and azimuthal extents of the
+compounding PSF of a point located 2 cm from the center without
+correction was 2.32 mm and 1.76 mm respectively considering
+an ideal B-mode PSF. The axial correction results in PSF radial
+and azimuthal widths of 1.18 mm and 0.88 mm respectively. It
+may be concluded that refraction tends to produce circular and
+elliptical structures with decreasing azimuthal extents for higher
+radial coordinates. The axial time delay compensation works at
+the best in the vicinity of the center of rotation and may even
+add to azimuthal spreading in the worst case for increasing radial
+coordinates.
+INTRODUCTION
+Spatial compounding is applied generally to reduce the
+effect of the speckle and to enhance the image definition. Full
+angle variant of this technique is limited only to organs or objects
+accessible from 360o for the given imaging plane. While
+the speckle emerges due to the partially coherent nature of the
+echosonography, it may be reduced if the data is compounded
+incoherently. Though the speckle may be minimized when the
+envelope of two or more images from different acquisitions are
+added together, the variations in speed of sound add refraction
+artifacts to the compound image, if the individual images
+span a substantially large angle around the object. This may
+be overcome completely if the speed of sound distribution
+is known. The accurate correction consists of two steps;
+calculation of the path of the refracted beams [2] and aligning
+the individual A-lines along these paths [3]. This approach,
+however, requires an accurate knowledge of the speed of sound
+distribution for an accurate ray tracing. Another approach was
+proposed in [4] which is based on approximating the refraction
+with an axial shift thus ignoring the bending of rays due to
+refraction. It was postulated that bending does not contribute
+significantly to refraction errors and simply the axial shifting
+of the respective A-lines according to the underlying speed of
+sound distribution is sufficient to correct the refraction errors
+[4]. Usually, in the context of echosonography, a uniform
+speed of sound is assumed and the depth zk corresponding to
+the kth sample of the backscattered signal is computed from
+the arrival time kTs on the basis of equation 1, where Ts is
+the sampling time.
+The axial correction consists of calculating the depth zk corresponding
+to the signal received at kth sample with equation
+2, where the speed of sound associated with the depth zi is
+ci.
+It will be shown below that the applicability of this method is
+limited by the location of the features and the speed of sound
+distribution of the medium. The purpose of the current work
+is to study the efficacy of the axial correction as well as that
+of the approximate model used for this purpose.
+Experimental Validation
+Figure 6 shows the results of compounding with and without
+axial correction carried out on the measured data. The cylindrical
+object of diameter 6 cm containing four polypropylene
+fibres stretched orthogonal to the imaging plane was filled
+with ethylene glycol (c1 = 1664 m/s) and immersed in
+water (c0 = 1490 m/s) at 22o C. The lower panels of the
+figure show the magnified images of the compound image
+without and with axial correction respectively. The results of
+the simulation model are overlayed to the measurement results.
+It may be noted that the results of simulation are in conformity
+with those of the measurement regarding the width of the
+point spread function. The small visual discrepancy, which
+is irrelevant for the current discussion, is due to the fact that
+the point spread function of the B-mode imaging system was
+supposed to be ideal.
+CONCLUSION
+The experimental validation shows the model assumptions
+to be well placed. Regarding the validity of the quantification
+shown in the curves of figure 5, it may be noted that they
+are applicable to the simulated case, in strict manner. It may
+however be pointed out that the qualitative results summarized
+below, remain valid for the most other cases possessing other
+speed of sound distributions.
+? Refraction tends to produce circular, elliptical and arc
+shaped artifacts with decreasing azimuthal extents for
+higher radial coordinates.
+? The axial time delay compensation works at the best at
+locations where the PSF of the uncorrected compound
+image has a symmetrical circular shape. In the worst
+case of higher radial coordinates, or generally, at locations
+where the PSF of uncorrected spatial compounding
+deviates substantially from the circular shape, the axial
+correction may even increase the PSF width.
+ACKNOWLEDGMENT
+This work was funded by the the German Federal Ministry
+of Education and Research bmb+f grant No. 01EZ0206 and
+was carried out in cooperation with the Ruhr Center of
+Excellence for Medical Engineering (KMR) Bochum.
+REFERENCES
+[1] M. Ashfaq and H. Ermert ¡°A new approach towards ultrasonic transmission
+tomography with a standard ultrasound system,¡± IEEE Ultrasonic
+Symposium Proceedings, pp. 1848-1851, 2004
+[2] M. Ashfaq and H. Ermert ¡°An eikonal equation based scheme for
+refraction artefacts compensation in time-of-flight tomography,¡± IEEE
+Ultrasonics Symposium Proceedings, pp. 2034-2037, 2005.
+[3] M. Ashfaq, Ch. Hansen, W. Wilkening and H. Ermert ¡°Spatial compounding
+with tissue harmonic images and monostatic synthetic aperture reconstruction,¡±,
+IEEE Ultrasonic Symposium Proceedings, pp. 1220-1223,
+2005.
+[4] J. R. Jago Experimental and Theoretical Studies of Ultrasound Computed
+Tomography, PhD Thesis, Faculty of Medicine, University of New Castle
+upon Tyne, 1993.
